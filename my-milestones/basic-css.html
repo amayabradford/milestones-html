@@ -18,6 +18,18 @@
       text-align: center;
     }
 
+    p.demo-transform {
+      text-transform:lowercase;
+    }
+
+    p.demo-line-height {
+      line-height: 100px;
+    }
+
+    p.demo-letter-space {
+      letter-spacing: 10px;
+    }
+
     p.demo-font-fam{
       font-family:'Courier New', Courier, monospace;
     }
@@ -34,6 +46,10 @@
       font-weight:900;
     }
 
+    ul.demo-list-style{
+      list-style-type:lower-greek;
+    }
+
     p.demo-border{
       border: 2px solid black;
       background-image: url(backimg.jpg);
@@ -44,20 +60,49 @@
       width: 200px
     }
 
+    p.demo-border2{
+      border: 4px double blue;
+      background-color:firebrick;
+      color:white;
+      padding: 100px;
+      margin: 50px 70px 0 auto;
+      width:200px;
+    }
+
+    img.demo-image{
+      width: 500px;
+      height: 100px;
+    }
+
+
   </style>
 </head>
 <body>
 
   <p class="demo-color">I like to eat blue apples and bananas.</p>
   <p class="demo-align">I like to eat centered apples and bananas.</p>
-  <p class="demo-transform">I like to eat apples and bananas.</p>
-  <p class="demo-line-height">I like to eat apples and bananas.</p>
-  <p class="demo-letter-space">I like to eat apples and bananas.</p>
+  <p class="demo-transform">I like to eat lowercase (or capitalized) apples and bananas.</p>
+  <p class="demo-line-height">I like to eat vertically spaced apples and bananas.</p>
+  <p class="demo-letter-space">I like to eat horiztonally spaced apples and bananas.</p>
   <p class="demo-font-fam">I like to eat Courier apples and bananas.</p>
   <p class="demo-font-size">I like to eat large apples and bananas.</p>
   <p class="demo-font-style">I like to eat styled apples and bananas.</p>
   <p class="demo-font-weight">I like to eat weighted apples and bananas.</p>
+
+  <ul class="demo-list-style">
+    <li>This is a list.</li>
+    <li>I can change the bullets or numbers on a list to these.</li>
+    <li>I wanted space emojis but I couldn't figure it out.</li>
+    <li>This was the next coolest in my opinion.</li>
+  </ul>
+
   <p class="demo-border">Here I demonstrate a border, padding, margin, and background image.</p>
+  <p class="demo-border2"> Here I demonstrate another border with padding and margin but with a background color instead.</p>
+
+  <p>
+    Here I play with the width and height of an image.
+    <img class="demo-image" src="easy-french-fries-1.jpg" alt="french fries">
+  </p>
 
   <div class="links">
     <a href="index.html">Home</a>
