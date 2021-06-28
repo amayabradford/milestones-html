@@ -4,28 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Styling a Page</title>
+  <title>Styling A Page</title>
   <style>
-    .border{
-      border-style: double;
+
+    .section-border{
+      border:3px solid black;
     }
+
+    .text-color{
+      color:blue;
+    }
+
   </style>
 </head>
 <body>
+  <h1>Styling A Page</h1>
 
-  <h1>Basic Tags</h1>
+  <section id="text" class="section-border">
+    <h2>Text</h2>
 
-  <section>
-    <h2>Inline Text</h2>
+    <h3>Inline Text</h3>
+    <p>
+      Here is an example using the <em>emphasis</em> tag. Another tag I could use to gain the same effect is the <i>italic</i> tag.
+    </p>
+
+    <p>
+      Here is an example using the <strong>strong</strong> tag. Another tag I could use to gain the same effect is the <b>bold</b> tag.
+    </p>
+
+    <code>
+      In this sentence I use the code tag to indicate that this is a line of code.
+    </code>
+
+    <h3>Block-Level Text</h3>
+    <blockquote>
+      In this example I use the blockquote tag to indicate I am writing a quote. I can include a cite attribute and a paragraph tag inside the blockquote tag.
+    </blockquote>
+
+    <pre class="text-color">
+      In     this example I use     the preformatted
+         tag in order for the    text I write in H T M L to appear
+                                                    the same on the webpage.
+    </pre>
   </section>
 
-  <section class="border">
-    <h2>Images</h2>
-  </section>
 
-  <section>
+  <section id="lists">
     <h2>Lists</h2>
 
+    <p>Here is an unordered list of colors.</p>
     <ul>
       <li>blue</li>
       <li>red</li>
@@ -33,19 +60,62 @@
       <li>pink</li>
     </ul>
 
+    <p class="text-color">Here is an ordered list of steps to make french fries, including an image and a link to a recipe.</p>
     <ol>
-      <li>Preheat oven to 400.</li>
+      <li>Preheat oven to 400 degrees.</li>
       <li>Empty half the bag of french fries onto a greased baking sheet with tin foil.</li>
       <li>Put the fries into the oven for 25 minutues.</li>
       <li>After cook time, take fries out of the oven and let cool for 10 minutes.</li>
-      <li> Your fries will look like this! <img src="easy-french-fries-1.jpg" width= 150px height=150px alt="french fries"></li>
+      <li>Your fries will look like this! <img src="easy-french-fries-1.jpg" width= 150px height=150px alt="french fries"></li>
+      <li>Here is a <a href="https://thecozycook.com/homemade-french-fries/" target="_blank">link</a> to the french fry recipe! </li>
+    </ol>
+
+    <p class="text-color">Here is an ordered list of countries I want to go to, with an unordered list of places I want to go to in each country.</p>
+    <ol>
+      <li>Greece</li>
+        <ul>
+          <li>
+            Athens
+          </li>
+          <li>
+            Parthenon
+          </li>
+          <li>
+            Delos
+          </li>
+        </ul>
+      <li class="text-color">Scotland</li>
+        <ul>
+          <li>
+            Inverness
+          </li>
+          <li>
+            Craigh Na Dun
+          </li>
+          <li>
+            Culloden Moor
+          </li>
+        </ul>
+      <li>Japan</li>
+        <ul>
+          <li>
+            Tokyo
+          </li>
+          <li>
+            Kyoto
+          </li>
+          <li>
+            Studio Ghibli Museum
+          </li>
+        </ul>
     </ol>
 
   </section>
 
-  <section class="border">
+  <section id="tables" class="section-border">
     <h2>Tables</h2>
 
+    <p>Here is a 3x3 chaotic table.</p>
     <table>
       <tr>
         <th>Lawful</th>
@@ -69,7 +139,7 @@
         <td>
           Neutral Good
         </td>
-        <td>
+        <td class="text-color">
           True Neutral
         </td>
         <td>
@@ -90,7 +160,70 @@
       </tr>
 
     </table>
+    <br>
+
+    <p class="text-color">Here is a 4x4 multiplication table.</p>
+    <table>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>8</td>
+        <td>12</td>
+        <td>16</td>
+      </tr>
+    </table>
+    <br>
+
+    <p>Here is a 2x2 table.</p>
+    <table>
+      <tr>
+        <th>High</th>
+        <th>Low</th>
+      </tr>
+      <tr>
+        <td>
+          Very High
+        </td>
+        <td>
+          Low-High
+        </td>
+      </tr>
+      <tr>
+        <td>
+          High-Low
+        </td>
+        <td>
+          Very Low
+        </td>
+
+      </tr>
+    </table>
+
   </section>
+  <br>
 
   <div class="links">
     <a href="index.html">Home</a>

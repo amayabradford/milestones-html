@@ -6,15 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Identifing Common CSS Properties</title>
   <style>
-    body{
-      color:black;
-    }
 
-    p.demo-color {
+    .demo-color {
       color: blue;
     }
 
-    p.demo-align {
+    .demo-align {
       text-align: center;
     }
 
@@ -46,7 +43,7 @@
       font-weight:900;
     }
 
-    ul.demo-list-style{
+    ul{
       list-style-type:lower-greek;
     }
 
@@ -69,7 +66,7 @@
       width:200px;
     }
 
-    img.demo-image{
+    img#demo-image{
       width: 500px;
       height: 100px;
     }
@@ -78,6 +75,10 @@
   </style>
 </head>
 <body>
+
+  <h1>Basic CSS</h1>
+
+  <h2>Common CSS Properties</h2>
 
   <p class="demo-color">I like to eat blue apples and bananas.</p>
   <p class="demo-align">I like to eat centered apples and bananas.</p>
@@ -89,7 +90,7 @@
   <p class="demo-font-style">I like to eat styled apples and bananas.</p>
   <p class="demo-font-weight">I like to eat weighted apples and bananas.</p>
 
-  <ul class="demo-list-style">
+  <ul>
     <li>This is a list.</li>
     <li>I can change the bullets or numbers on a list to these.</li>
     <li>I wanted space emojis but I couldn't figure it out.</li>
@@ -101,8 +102,10 @@
 
   <p>
     Here I play with the width and height of an image.
-    <img class="demo-image" src="easy-french-fries-1.jpg" alt="french fries">
+    <img id="demo-image" src="easy-french-fries-1.jpg" alt="french fries">
   </p>
+
+  <h2>Identifing CSS</h2>
 
   <div class="links">
     <a href="index.html">Home</a>
