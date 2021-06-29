@@ -71,6 +71,13 @@
       height: 100px;
     }
 
+    p > img{
+      margin-left: 50px;
+    }
+
+    div p {
+      color: darkorchid;
+    }
 
   </style>
 </head>
@@ -101,9 +108,13 @@
   <p class="demo-border2"> Here I demonstrate another border with padding and margin but with a background color instead.</p>
 
   <p>
-    Here I play with the width and height of an image.
+    Here I play with the width and height of an image, and add some margin to move it slightly to the right using a child combinator.
     <img id="demo-image" src="easy-french-fries-1.jpg" alt="french fries">
   </p>
+
+  <div>
+    <p>Here I change the color of the text to purple to demonstrate a decendent combinator.</p>
+  </div>
 
 
   <div class="links">
